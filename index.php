@@ -10,7 +10,7 @@
   ...
   <!-- The rest of the content -->
 
-  
+
   ...
 </body>
 </html>
