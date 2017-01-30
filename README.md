@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Table Of Contents
 
 * [Team Members](#team-members)
@@ -106,7 +105,3 @@ The system will limit access to authorized users.
 ## Non-Functional Requirements
 
 * The system must be hosted online for everybody to access. The domaine name is not yet chosen.
-=======
-# AccountingApp
-This is the Accounting App Project for Dahabshiil Company.
->>>>>>> 7fe38fe4e925d54b1340e4fd88d5226794c16eb0
