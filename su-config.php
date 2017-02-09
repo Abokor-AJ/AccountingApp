@@ -1,26 +1,26 @@
 <?php
 /**
  * Configuration file
- * 
- * This file is important to all pages changes can be made to constants if  the 
+ *
+ * This file is important to all pages changes can be made to constants if  the
  * need arises
  * @author Ibrahim Isa & Abokor Djama
  * @version 1.0
  */
 
 /**
- * This function will turn output buffering on. While output buffering is active 
- * no output is sent from the script (other than headers), instead the output is 
+ * This function will turn output buffering on. While output buffering is active
+ * no output is sent from the script (other than headers), instead the output is
  * stored in an internal buffer.
  */
 ob_start();
 /**
- * Sets the value of the given configuration option. The configuration option will 
- * keep this new value during the script's execution, and will be restored at the 
+ * Sets the value of the given configuration option. The configuration option will
+ * keep this new value during the script's execution, and will be restored at the
  * script's ending.
- * 
- * In this case it will not display warnings & error reporting exect for real 
- * sytax error 
+ *
+ * In this case it will not display warnings & error reporting exect for real
+ * sytax error
  */
 ini_set('display_errors', 1);
 
@@ -37,33 +37,34 @@ define('SU_SETTINGS','su-settings.php');
  * @package nw-config
  * @subpackage config
  */
+
 class config
-{   
+{
     /**
      * The db username is assigned here
      * @access public
      * @var string|integer
      */
-    protected $db_local_user  = '';
+    protected $db_local_user  = 'root';
     /**
-     * The db password is assigned here 
+     * The db password is assigned here
      * @access public
      * @var string|integer
      */
-    protected $db_local_pswd  = '';
+    protected $db_local_pswd  = 'root';
     /**
      * The db - Mysql database name
      * @access public
      * @var string|integer
      */
-    protected $db_local_base  = '';
+    protected $db_local_base  = 'dahab';
     /**
-     * The return variable  
+     * The return variable
      * @access public
      * @var string|integer
      */
-    public $return             = '' ;
-    
+    public $return            = '';
+
     /**
      * @param none
      * @return string
@@ -75,18 +76,18 @@ class config
 
           return $directory;
     }
-    
+
     /**
      * @param none
-     * @return string   
-     * Description : Returns the page url 
+     * @return string
+     * Description : Returns the page url
      */
     public function get_base_url()
     {
-          //Get the protocol the website is using 
+          //Get the protocol the website is using
           $protocol = strtolower(substr($_SERVER["SERVER_PROTOCOL"], 0, 5)) == 'https://' ? 'https://' : 'http://';
 
-          // Returns localhost OR mysite.com 
+          // Returns localhost OR mysite.com
           $host     = $_SERVER['HTTP_HOST'];
 
           /*
@@ -102,17 +103,17 @@ class config
      * @param  none
      * @return type string
      */
-    public function pagDir() 
+    public function pagDir()
     {
-         
+
          $this->return  = $_SERVER['DOCUMENT_ROOT'];
-        
+
          $this->return .= config::no_root();
-        
+
          return  $this->return;
 
     }
 }
 
 // Include Settings
-include(SU_SETTINGS); 
+include(SU_SETTINGS);
