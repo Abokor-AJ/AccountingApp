@@ -34,7 +34,7 @@ if (isset($_POST['Submit'])) //here give the name of your button on which you wo
 //here you can redirect on your file which you want to show after login just change filename, give it to your filename.
 			while ($rows) {
 				$_SESSION['userid'] = $rows['username'];
-				header("Location: Welcome.php");
+				header("Location: welcome.php");
 				exit();
 			}
 

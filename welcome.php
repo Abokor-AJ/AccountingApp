@@ -11,4 +11,6 @@ if ($_SESSION['userid'] == '') {
   <div class="content-wrapper">
       <h1 style="text-align:left">This is the Welcome page.</h1>
   </div>
+
+  <div><a href="include/logout.php">Log out</a></div>
 <!-- .content-wrapper -->
