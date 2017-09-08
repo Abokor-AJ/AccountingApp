@@ -10,7 +10,7 @@
 
 # Team Members
 * "Abokor Djama OMAR". Username: Abokor-AJ. Email: <abodjama@gmail.com>
-* "Mohamed OMAR".
+* "Mohamed OMAR". Email: <m.jiboman@gmail.com>
 
 # Project Title And Description
 
